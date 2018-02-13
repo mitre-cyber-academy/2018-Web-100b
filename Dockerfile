@@ -1,12 +1,9 @@
 FROM node
 
-ARG FLAG
-
 RUN mkdir /app
 WORKDIR /app
 COPY . .
 
-RUN echo ${FLAG} > flag.txt
 RUN npm install
 
 ENV NODE_ENV=production

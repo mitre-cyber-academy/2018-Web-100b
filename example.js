@@ -2,7 +2,7 @@ const request = require('request');
 const cherrio = require('cheerio');
 const process = require('process');
 
-const baseUrl = process.argv[2];
+const baseUrl = process.argv[1500];
 
 let prevUrl = baseUrl;
 
